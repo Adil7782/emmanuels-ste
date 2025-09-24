@@ -7,15 +7,15 @@ import { useEffect } from "react"
 export default function HeroSection() {
 
 
-  const scrollToContact = () => {
-    const element = document.querySelector("#contact")
+  const scrollToContact = (link:string) => {
+    const element = document.querySelector(`#${link}`)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
     }
   }
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 overflow-hidden flex items-center">
+    <section id="home" className="relative min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 overflow-hidden flex items-center">
       {/* Professional Background Elements */}
       <div className="absolute inset-0">
         {/* Subtle grid pattern */}
@@ -97,9 +97,10 @@ export default function HeroSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="600">
+
               <Button
                 size="lg"
-                onClick={scrollToContact}
+                onClick={()=>scrollToContact("services")}
                 className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-4 text-lg rounded-lg transition-all duration-200 hover:scale-105 shadow-lg hover:shadow-cyan-400/25 group"
               >
                 Start Your Innovation Journey
@@ -109,10 +110,13 @@ export default function HeroSection() {
                 size="lg"
                 variant="outline"
                 className="border-2 border-slate-600 text-slate-200 hover:bg-slate-800/50 hover:border-slate-500 px-8 py-4 text-lg rounded-lg font-semibold transition-all duration-200 hover:scale-105 group bg-transparent"
+                onClick={()=>scrollToContact("portfolio")}
+
               >
                 View Our Projects
                 <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
+
             </div>
           </div>
 

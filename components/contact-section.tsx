@@ -258,27 +258,28 @@ export default function ContactSection() {
                 
                 {/* Google Maps Embed */}
                 <div className="relative w-full h-80 rounded-xl overflow-hidden border border-slate-600">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8977714562406!2d79.84593931477398!3d6.902030995037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25963120b1509%3A0x2012a9c8b7c5b55a!2s339%20Galle%20Rd%2C%20Colombo%2000300%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1640000000000!5m2!1sen!2slk"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    className="rounded-xl filter contrast-125 saturate-110"
-                  />
-                  
-                  {/* Dark Mode Map Overlay */}
-                  <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-slate-900/10 to-transparent rounded-xl" />
-                </div>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1246.357444657978!2d79.88888130868624!3d7.071067054197325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2f149e915434f%3A0x548bcd00b455a513!2sELIoT%20International%20(Pvt)%20Ltd.!5e1!3m2!1sen!2slk!4v1758695868058!5m2!1sen!2slk"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    className="rounded-xl filter contrast-125 saturate-110"
+  />
+
+  {/* Dark Mode Map Overlay */}
+  <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-slate-900/10 to-transparent rounded-xl" />
+</div>
 
                 {/* Location Info */}
                 <div className="mt-4 p-4 bg-slate-700/50 rounded-xl">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-sm font-semibold text-white">Emmanuel's Lanka Office</p>
-                      <p className="text-xs text-slate-400">Colombo 3, Galle Road</p>
+                      <p className="text-sm font-semibold text-white">ELIoT International (Pvt) Ltd.</p>
+                      <p className="text-xs text-slate-400">
+Hettigama, St Francis Xavier Rd, Ja-Ela 11350</p>
                     </div>
                     <a
                       href="https://maps.google.com/?q=339+Galle+Road,+Colombo+3,+Sri+Lanka"

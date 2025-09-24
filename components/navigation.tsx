@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Moon, Sun, Menu, X, Zap } from "lucide-react"
+import Image from "next/image"
 
 interface NavigationProps {
   darkMode: boolean
@@ -51,12 +52,15 @@ export default function Navigation({ darkMode, setDarkMode }: NavigationProps) {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
+            <button onClick={() => scrollToSection("#home")}>
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <Zap className="h-5 w-5 text-white" />
+              
+              <div className=" rounded-lg flex items-center justify-center">
+                <Image src={"/logo.jpeg"} height={48} width={48} alt=""/>
               </div>
               <h1 className="text-xl font-bold text-primary">Emmanuel's Lanka</h1>
             </div>
+              </button>
           </div>
 
           {/* Desktop Navigation */}
