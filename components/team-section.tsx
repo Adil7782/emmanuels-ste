@@ -8,7 +8,7 @@ export default function TeamSection() {
       name: "CANISIUS COSTA",
       position: "Chairman",
       credentials: "BSc Pub Admin, Justice of Peace",
-      image: "/business-executive-portrait.png",
+      image: "/business-executive-portrait.jpg",
       specialty: "Leadership & Strategy"
     },
     {
@@ -57,28 +57,28 @@ export default function TeamSection() {
       name: "DHANUSHKA MENDIS",
       position: "Electronics Engineer",
       credentials: "BSc Hons IET",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/ELECTRONICS-ENGINEER-BSc-Hons-IET.jpg",
       specialty: "Embedded Systems"
     },
     {
       name: "ADISHA MENDIS",
       position: "Electronics Design Engineer",
       credentials: "BSc Eng Hons SLIIT",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/ELECTRONICS-DESIGN-ENGINEER-BSc-Eng-Hons-SLIIT.jpg",
       specialty: "PCB Design"
     },
     {
       name: "MALINDU BATHEEGAMA",
       position: "Electronics Design Engineer",
       credentials: "BSc Eng Hons SLIIT",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/ELECTRONICS-DESIGN-ENGINEER-BSc-Eng-Hons SLIIT.jpg",
       specialty: "IoT Systems"
     },
     {
       name: "ARUNA BANDARA",
       position: "Mechatronic Engineer",
       credentials: "BEng Hons",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/MECHATRONIC-ENGINEER-BEng Hons DUMMY.jpg",
       specialty: "Robotics & Automation"
     },
   ]
