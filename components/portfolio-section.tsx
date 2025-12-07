@@ -62,23 +62,24 @@ export default function PortfolioSection() {
       id: 7,
       title: "Printing Machine",
       category: "Printing Machine",
-      image: "/industrial-printing-machine-automation.jpg",
+      image: "/print-5.jpg",
       description: "Advanced automated printing solution with IoT integration",
       tech: ["IoT", "Automation", "Industrial"],
     },
+
     {
       id: 8,
-      title: "Jetson AI System",
-      category: "Jetson AI",
-      image: "/ai-computer-vision-system-industrial.jpg",
-      description: "AI-powered computer vision system for quality control",
-      tech: ["AI", "Computer Vision", "Jetson"],
+      title: "Solar Installation Project",
+      category: "Solar Project",
+      image: "/solar-3.jpg",
+      description: "Large-scale solar installation with energy management",
+      tech: ["Solar", "Energy Management", "Sustainability"],
     },
-    {
+        {
       id: 9,
       title: "Smart Vender Machine",
       category: "Vender Machine",
-      image: "/vendor_machine-4.jpg",
+      image: "/vendor_machine-3.jpg",
       description: "IoT-enabled smart vending solution with remote monitoring",
       tech: ["IoT", "Smart Systems", "Remote Control"],
     },
@@ -86,7 +87,7 @@ export default function PortfolioSection() {
       id: 10,
       title: "Solar Installation Project",
       category: "Solar Project",
-      image: "/solar-panel-installation-industrial.jpg",
+      image: "/solar-2.jpg",
       description: "Large-scale solar installation with energy management",
       tech: ["Solar", "Energy Management", "Sustainability"],
     },
@@ -94,18 +95,19 @@ export default function PortfolioSection() {
       id: 11,
       title: "Advanced Printing Solution",
       category: "Printing Machine",
-      image: "/advanced-printing-technology.jpg",
+      image: "/print-6.jpg",
       description: "Next-generation printing technology with AI optimization",
       tech: ["AI", "Printing", "Optimization"],
     },
-    {
+        {
       id: 12,
-      title: "AI Vision System",
-      category: "Jetson AI",
-      image: "/machine-vision-ai-system.jpg",
-      description: "Machine vision system for automated quality inspection",
-      tech: ["Machine Vision", "AI", "Quality Control"],
+      title: "Smart Vender Machine",
+      category: "Vender Machine",
+      image: "/vendor_machine-4.jpg",
+      description: "IoT-enabled smart vending solution with remote monitoring",
+      tech: ["IoT", "Smart Systems", "Remote Control"],
     },
+
   ]
 
   const filteredProjects =
