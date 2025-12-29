@@ -27,15 +27,16 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation darkMode={darkMode} setDarkMode={setDarkMode} />
-      <ScrollProgress />
       <main>
+        <ScrollProgress />
+
         <HeroSection />
         <ClientsSection />
         <AboutSection />
         <ServicesSection />
         <PortfolioSection />
         {/* <TeamSection /> */}
-        <ProductsSection />
+        {/* <ProductsSection /> */}
         <ContactSection />
       </main>
       <Footer />
