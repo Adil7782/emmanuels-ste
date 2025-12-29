@@ -7,7 +7,7 @@ import { useEffect } from "react"
 export default function HeroSection() {
 
 
-  const scrollToContact = (link:string) => {
+  const scrollToContact = (link: string) => {
     const element = document.querySelector(`#${link}`)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
@@ -23,7 +23,7 @@ export default function HeroSection() {
           <svg width="100%" height="100%" className="absolute inset-0">
             <defs>
               <pattern id="professional-grid" width="80" height="80" patternUnits="userSpaceOnUse">
-                <path d="M 80 0 L 0 0 0 80" fill="none" stroke="rgb(59, 130, 246)" strokeWidth="1"/>
+                <path d="M 80 0 L 0 0 0 80" fill="none" stroke="rgb(59, 130, 246)" strokeWidth="1" />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#professional-grid)" />
@@ -33,7 +33,7 @@ export default function HeroSection() {
         {/* Gradient overlays */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" data-aos="fade-in" data-aos-duration="2000" />
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-cyan-400/10 rounded-full blur-3xl" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="500" />
-        
+
         {/* Corner accent lines */}
         <div className="absolute top-8 left-8 w-20 h-20 border-l-2 border-t-2 border-blue-400/30" />
         <div className="absolute top-8 right-8 w-20 h-20 border-r-2 border-t-2 border-blue-400/30" />
@@ -46,8 +46,8 @@ export default function HeroSection() {
           {/* Left Content */}
           <div className="space-y-8">
             {/* Status Badge */}
-            <div 
-              data-aos="fade-up" 
+            <div
+              data-aos="fade-up"
               data-aos-delay="100"
               className="inline-flex items-center gap-3 px-4 py-2 bg-slate-800/80 border border-blue-400/30 rounded-full backdrop-blur-sm"
             >
@@ -61,7 +61,7 @@ export default function HeroSection() {
                 <span className="block text-white drop-shadow-lg">Emmanuel's</span>
                 <span className="block text-cyan-400 drop-shadow-lg">Lanka</span>
               </h1>
-              
+
               <div className="space-y-4">
                 <div className="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full" data-aos="width-expand" data-aos-delay="600" />
                 <p className="text-xl lg:text-2xl font-medium text-slate-200 leading-relaxed">
@@ -71,13 +71,13 @@ export default function HeroSection() {
             </div>
 
             {/* Description */}
-            <p 
-              data-aos="fade-up" 
+            <p
+              data-aos="fade-up"
               data-aos-delay="400"
               className="text-lg text-slate-300 leading-relaxed max-w-xl"
             >
-              Since 2009, our multidisciplinary team of <span className="font-semibold text-cyan-400">engineers and consultants</span> has 
-              delivered innovative <span className="font-semibold text-blue-300">IoT and automation solutions</span> for Sri Lankan 
+              Since 2009, our multidisciplinary team of <span className="font-semibold text-cyan-400">engineers and consultants</span> has
+              delivered innovative <span className="font-semibold text-blue-300">IoT and automation solutions</span> for Sri Lankan
               manufacturing sectors including <span className="font-semibold text-cyan-400">Retail, RMG, and Poultry industries</span>.
             </p>
 
@@ -100,7 +100,7 @@ export default function HeroSection() {
 
               <Button
                 size="lg"
-                onClick={()=>scrollToContact("services")}
+                onClick={() => scrollToContact("services")}
                 className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-4 text-lg rounded-lg transition-all duration-200 hover:scale-105 shadow-lg hover:shadow-cyan-400/25 group"
               >
                 Start Your Innovation Journey
@@ -110,7 +110,7 @@ export default function HeroSection() {
                 size="lg"
                 variant="outline"
                 className="border-2 border-slate-600 text-slate-200 hover:bg-slate-800/50 hover:border-slate-500 px-8 py-4 text-lg rounded-lg font-semibold transition-all duration-200 hover:scale-105 group bg-transparent"
-                onClick={()=>scrollToContact("portfolio")}
+                onClick={() => scrollToContact("portfolio")}
 
               >
                 View Our Projects

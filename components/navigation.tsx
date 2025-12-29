@@ -42,25 +42,24 @@ export default function Navigation({ darkMode, setDarkMode }: NavigationProps) {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 overflow-hidden ${
-        scrolled
-          ? "bg-background/95 backdrop-blur-md border-b border-primary/20 shadow-lg"
-          : "bg-background/80 backdrop-blur-md border-b border-border"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 overflow-hidden ${scrolled
+        ? "bg-background/70 backdrop-blur-xl border-b border-foreground/10 shadow-sm backdrop-saturate-150"
+        : "bg-background/30 backdrop-blur-md border-b border-transparent backdrop-saturate-100"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <button onClick={() => scrollToSection("#home")}>
-            <div className="flex items-center space-x-2">
-              
-              <div className=" rounded-lg flex items-center justify-center">
-                <Image src={"/logo.jpeg"} height={48} width={48} alt=""/>
+              <div className="flex items-center space-x-2">
+
+                <div className=" rounded-lg flex items-center justify-center">
+                  <Image src={"/logo.png"} height={48} width={48} alt="" />
+                </div>
+                <h1 className="text-xl font-bold text-primary">Emmanuel's Lanka</h1>
               </div>
-              <h1 className="text-xl font-bold text-primary">Emmanuel's Lanka</h1>
-            </div>
-              </button>
+            </button>
           </div>
 
           {/* Desktop Navigation */}
@@ -89,12 +88,7 @@ export default function Navigation({ darkMode, setDarkMode }: NavigationProps) {
             >
               {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
-            <Button
-              onClick={() => scrollToSection("#contact")}
-              className="bg-primary hover:bg-primary/90 text-white hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              Get Started
-            </Button>
+
           </div>
 
           {/* Mobile menu button */}
@@ -120,27 +114,29 @@ export default function Navigation({ darkMode, setDarkMode }: NavigationProps) {
       </div>
 
       {/* Mobile Navigation */}
-      {mobileMenuOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background/95 backdrop-blur-md border-b border-primary/20">
-            {navItems.map((item) => (
-              <button
-                key={item.name}
-                onClick={() => scrollToSection(item.href)}
-                className="text-foreground hover:text-primary hover:bg-primary/10 block px-3 py-2 text-base font-medium w-full text-left transition-all duration-300 rounded-lg"
+      {
+        mobileMenuOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background/70 backdrop-blur-xl border-b border-foreground/10 backdrop-saturate-150">
+              {navItems.map((item) => (
+                <button
+                  key={item.name}
+                  onClick={() => scrollToSection(item.href)}
+                  className="text-foreground hover:text-primary hover:bg-primary/10 block px-3 py-2 text-base font-medium w-full text-left transition-all duration-300 rounded-lg"
+                >
+                  {item.name}
+                </button>
+              ))}
+              <Button
+                onClick={() => scrollToSection("#contact")}
+                className="bg-primary hover:bg-primary/90 text-white w-full mt-4 hover:scale-105 transition-all duration-300"
               >
-                {item.name}
-              </button>
-            ))}
-            <Button
-              onClick={() => scrollToSection("#contact")}
-              className="bg-primary hover:bg-primary/90 text-white w-full mt-4 hover:scale-105 transition-all duration-300"
-            >
-              Get Started
-            </Button>
+                Get Started
+              </Button>
+            </div>
           </div>
-        </div>
-      )}
-    </nav>
+        )
+      }
+    </nav >
   )
 }

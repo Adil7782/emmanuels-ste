@@ -108,26 +108,29 @@ export default function ServicesSection() {
         </div>
 
         {/* Our Expertise */}
-        <div data-aos="fade-up" className="text-center">           
-  <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 drop-shadow-lg">
-    Our Expertise
-  </h3>           
-  <p className="text-lg text-gray-200 mb-8 max-w-2xl mx-auto text-pretty drop-shadow-md">             
-    Our team is well-skilled with following areas to innovate the best solution for you.           
-  </p>           
-  <div className="flex flex-wrap justify-center gap-3">             
-    {expertise.map((skill, index) => (               
-      <span                 
-        key={index}                 
-        data-aos="fade-up"                 
-        data-aos-delay={index * 30}                 
-        className="bg-white/15 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-all duration-300 cursor-default hover:scale-105 border border-white/30 shadow-lg hover:shadow-xl hover:shadow-primary/20"               
-      >                 
-        {skill}               
-      </span>             
-    ))}           
-  </div>         
-</div>
+        <div data-aos="fade-up" className="text-center">
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 drop-shadow-lg">
+            <span className="bg-gradient-to-r from-slate-900 via-primary to-blue-600 dark:from-white dark:via-gray-300 dark:to-gray-400 bg-clip-text text-transparent">
+
+              Our Expertise
+            </span>
+          </h3>
+          <p className="text-lg text-slate-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Our team is well-skilled with following areas to innovate the best solution for you.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 mt-12">
+            {expertise.map((skill, index) => (
+              <span
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 30}
+                className="bg-white/15 backdrop-blur-sm dark:text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-primary hover:text-white text-gray-700 transition-all duration-300 cursor-default hover:scale-105 border border-white/30 shadow-lg hover:shadow-xl hover:shadow-primary/20"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   )
