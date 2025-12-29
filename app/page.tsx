@@ -11,6 +11,7 @@ import TeamSection from "@/components/team-section"
 import ProductsSection from "@/components/products-section"
 import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
+import { ScrollProgress } from "@/components/ui/scroll-progress"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true)
@@ -26,13 +27,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation darkMode={darkMode} setDarkMode={setDarkMode} />
+      <ScrollProgress />
       <main>
         <HeroSection />
         <ClientsSection />
         <AboutSection />
         <ServicesSection />
         <PortfolioSection />
-        <TeamSection />
+        {/* <TeamSection /> */}
         <ProductsSection />
         <ContactSection />
       </main>

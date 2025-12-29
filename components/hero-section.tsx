@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Factory, Cpu, Network, Shield, Activity, ChevronRight, Play } from "lucide-react"
 import { useEffect } from "react"
+import { DockDemo } from "./ui/UiSample"
 
 export default function HeroSection() {
 
@@ -96,20 +97,13 @@ export default function HeroSection() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="600">
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center" data-aos="fade-up" data-aos-delay="600">
+              <DockDemo />
 
               <Button
                 size="lg"
-                onClick={() => scrollToContact("services")}
-                className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-4 text-lg rounded-lg transition-all duration-200 hover:scale-105 shadow-lg hover:shadow-cyan-400/25 group"
-              >
-                Start Your Innovation Journey
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button
-                size="lg"
                 variant="outline"
-                className="border-2 border-slate-600 text-slate-200 hover:bg-slate-800/50 hover:border-slate-500 px-8 py-4 text-lg rounded-lg font-semibold transition-all duration-200 hover:scale-105 group bg-transparent"
+                className="border-1 border-slate-600 text-slate-200 hover:bg-slate-800/50 hover:border-slate-500 px-8 py-7 text-lg rounded-lg font-semibold transition-all duration-200 hover:scale-105 group bg-transparent"
                 onClick={() => scrollToContact("portfolio")}
 
               >
@@ -175,9 +169,9 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-800 to-transparent" />
+
     </section>
   )
 }

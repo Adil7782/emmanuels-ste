@@ -13,7 +13,7 @@ export default function TeamSection() {
     },
     {
       name: "SUDEERA COSTA",
-      position: "Chief Technology Officer",
+      position: "Chief Executive Officer",
       credentials: "B.Eng Hons UK, PMP USA, Hons NIIT InD",
       image: "/technology-executive-professional-portrait.jpg",
       specialty: "Technology Leadership"
@@ -89,17 +89,17 @@ export default function TeamSection() {
       <div className="absolute inset-0">
         <div className="absolute top-1/3 left-10 w-72 h-72 bg-gradient-to-r from-primary/5 to-blue-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-1/3 right-10 w-80 h-80 bg-gradient-to-r from-cyan-400/5 to-primary/5 rounded-full blur-3xl" />
-        
+
         {/* Geometric Pattern */}
         <div className="absolute inset-0 opacity-[0.02] dark:opacity-[0.05]">
           <svg width="100%" height="100%">
             <defs>
               <pattern id="team-grid" width="100" height="100" patternUnits="userSpaceOnUse">
-                <path d="M 100 0 L 0 0 0 100" fill="none" stroke="currentColor" strokeWidth="1"/>
-                <circle cx="50" cy="50" r="1.5" fill="currentColor" opacity="0.6"/>
+                <path d="M 100 0 L 0 0 0 100" fill="none" stroke="currentColor" strokeWidth="1" />
+                <circle cx="50" cy="50" r="1.5" fill="currentColor" opacity="0.6" />
               </pattern>
             </defs>
-            <rect width="100%" height="100%" fill="url(#team-grid)" className="text-primary"/>
+            <rect width="100%" height="100%" fill="url(#team-grid)" className="text-primary" />
           </svg>
         </div>
       </div>
@@ -111,15 +111,15 @@ export default function TeamSection() {
             <Users className="h-4 w-4 text-primary" />
             <span className="text-sm font-medium text-primary">Meet Our Experts</span>
           </div>
-          
+
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-slate-900 via-primary to-blue-600 dark:from-white dark:via-cyan-400 dark:to-blue-400 bg-clip-text text-transparent">
               Our Team
             </span>
           </h2>
-          
+
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            A multidisciplinary team of engineers, consultants, and innovators dedicated to 
+            A multidisciplinary team of engineers, consultants, and innovators dedicated to
             delivering cutting-edge R&D solutions across various technological domains.
           </p>
         </div>
@@ -134,7 +134,7 @@ export default function TeamSection() {
               className="group relative"
             >
               <div className="relative overflow-hidden rounded-2xl bg-white dark:bg-slate-800/50 backdrop-blur-xl shadow-xl dark:shadow-2xl border border-slate-200/50 dark:border-slate-700/50 hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-primary/20 hover:-translate-y-2">
-                
+
                 {/* Image Container with Modern Overlay */}
                 <div className="relative overflow-hidden aspect-[3/4] bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-700 dark:to-slate-800">
                   <img
@@ -142,10 +142,10 @@ export default function TeamSection() {
                     alt={member.name}
                     className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                   />
-                  
+
                   {/* Modern Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent group-hover:from-black/40 transition-all duration-500" />
-                  
+
                   {/* Specialty Badge */}
                   <div className="absolute top-4 left-4 right-4">
                     <span className="inline-block px-3 py-1 bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm text-primary text-xs font-semibold rounded-full border border-primary/20">
@@ -174,7 +174,7 @@ export default function TeamSection() {
                       {member.position}
                     </p>
                   </div>
-                  
+
                   <div className="flex items-start gap-2">
                     <Award className="h-4 w-4 text-slate-400 dark:text-slate-500 mt-0.5 flex-shrink-0" />
                     <p className="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">

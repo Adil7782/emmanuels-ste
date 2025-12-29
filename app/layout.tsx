@@ -1,13 +1,11 @@
-import type React from "react"
-import { Inter, Poppins } from "next/font/google"
+import { Outfit } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] });
-const poppins = Poppins({ 
+const outfit = Outfit({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  style: ['normal', 'italic'],
+  variable: "--font-sans",
 });
+
 export const metadata = {
   title: "Emmanuel's Lanka - Smart Factory Solutions",
   description:
@@ -21,11 +19,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${poppins.className} antialiased`}>
+    <html lang="en">
       <head>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
       </head>
-      <body className="font-sans">
+      <body className={`${outfit.variable} font-sans antialiased`}>
         {children}
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script
