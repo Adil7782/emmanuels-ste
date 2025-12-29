@@ -1,4 +1,5 @@
 import { Cpu, Lightbulb, Cog, Zap, Bot, Sun, Database, Search } from "lucide-react"
+import { ParticlesBackground } from "./ui/meshBackground"
 
 export default function ServicesSection() {
   const services = [
@@ -71,12 +72,15 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-slate-900 dark:to-blue-900"
+      className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-slate-900 dark:to-blue-900 relative overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="absolute inset-0"><ParticlesBackground id="services-particles" /></div>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div data-aos="fade-up" className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl text-foreground/90 whitespace-nowrap font-bold dark:text-white mb-4">Services</h2>
-          <p className="text-xl text-white/50 max-w-3xl mx-auto text-pretty">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-800 via-blue-600 to-cyan-600 dark:from-white dark:via-blue-400 dark:to-cyan-400 bg-clip-text text-transparent mb-6">
+
+            Services</h2>
+          <p className="text-xl text-slate-600 dark:text-gray-300 max-w-3xl mx-auto text-pretty">
             These are the Services we provide by engineering efficiently and effectively.
           </p>
         </div>
