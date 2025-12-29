@@ -359,6 +359,7 @@ export default function ContactSection() {
               </div>
             </div>
 
+
             {/* Interactive Map */}
             <div data-aos="fade-up" data-aos-delay="200">
               <div className="bg-slate-800/60 backdrop-blur-xl rounded-2xl p-6 shadow-2xl border border-slate-700/50">
