@@ -1,4 +1,5 @@
 import { Users, Award, Calendar, Target, TrendingUp } from "lucide-react"
+import { ShineBorder } from "./ui/shine-border"
 
 export default function AboutSection() {
   const metrics = [
@@ -68,67 +69,73 @@ export default function AboutSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-  <div data-aos="fade-up" className="text-center mb-16">
-    {/* Modern Header with Gradient Text */}
-    <div className="inline-block mb-4">
-      <span className="text-sm font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 px-4 py-2 rounded-full border border-blue-200 dark:border-blue-800">
-        WHO WE ARE
-      </span>
-    </div>
-    
-    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-800 via-blue-600 to-cyan-600 dark:from-white dark:via-blue-400 dark:to-cyan-400 bg-clip-text text-transparent mb-6">
-      About Us
-    </h2>
-    
-    {/* Modern divider */}
-    <div className="flex justify-center mb-8">
-      <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"></div>
-    </div>
+          <div data-aos="fade-up" className="text-center mb-16">
+            {/* Modern Header with Gradient Text */}
+            <div className="inline-block mb-4">
+              <span className="text-sm font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 px-4 py-2 rounded-full border border-blue-200 dark:border-blue-800">
+                WHO WE ARE
+              </span>
+            </div>
 
-    {/* Enhanced content grid */}
-    <div className="max-w-6xl mx-auto">
-      <div className="grid lg:grid-cols-3 gap-8 items-start">
-        
-        {/* Main description */}
-        <div className="lg:col-span-2 space-y-6">
-          <div className="group">
-            <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-pretty bg-white/50 dark:bg-gray-800/50 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-300 hover:border-blue-200 dark:hover:border-blue-700">
-              Our team of experienced consultants and engineers across wide disciplines get together to built our
-              reputation on giving our customers straightforward, practical, technical advice and recommend products &
-              Solutions that work together to meet their needs.
-            </p>
-          </div>
-          
-          <div className="group">
-            <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-pretty bg-white/50 dark:bg-gray-800/50 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-300 hover:border-cyan-200 dark:hover:border-cyan-700">
-              Innovative Products and management tools for the Retail industry, RMG industry & poultry industry based on
-              scientific self-learning algorithms, using your enterprise data to further improve and optimize your
-              production and business process.
-            </p>
-          </div>
-        </div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-800 via-blue-600 to-cyan-600 dark:from-white dark:via-blue-400 dark:to-cyan-400 bg-clip-text text-transparent mb-6">
+              About Us
+            </h2>
 
-        {/* Side highlight card */}
-        <div className="lg:col-span-1">
-          <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 p-6 rounded-2xl border border-blue-200 dark:border-blue-700 shadow-lg">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Target className="h-8 w-8 text-white" />
+            {/* Modern divider */}
+            <div className="flex justify-center mb-8">
+              <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"></div>
+            </div>
+
+            {/* Enhanced content grid */}
+            <div className="max-w-6xl mx-auto">
+              <div className="grid lg:grid-cols-3 gap-8 items-start">
+
+                {/* Main description */}
+                <div className="lg:col-span-2 space-y-6 ">
+                  <div className="group relative rounded-2xl">
+                    <ShineBorder shineColor={["#00d2f3", "#1b2d59", "#0b90b7"]} className="absolute inset-0" />
+
+                    <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-pretty bg-white/50 dark:bg-gray-800/50 p-6  rounded-2xl  shadow-sm hover:shadow-md transition-all duration-300 hover:border-blue-200 dark:hover:border-blue-700">
+                      Our team of experienced consultants and engineers across wide disciplines get together to built our
+                      reputation on giving our customers straightforward, practical, technical advice and recommend products &
+                      Solutions that work together to meet their needs.
+                    </p>
+                  </div>
+
+                  <div className="group relative rounded-2xl">
+                    <ShineBorder shineColor={["#00d2f3", "#1b2d59", "#0b90b7"]} className="absolute inset-0" />
+
+                    <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-pretty bg-white/50 dark:bg-gray-800/50 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:border-cyan-200 dark:hover:border-cyan-700">
+                      Innovative Products and management tools for the Retail industry, RMG industry & poultry industry based on
+                      scientific self-learning algorithms, using your enterprise data to further improve and optimize your
+                      production and business process.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Side highlight card */}
+                <div className="lg:col-span-1 relative rounded-2xl">
+                  <ShineBorder shineColor={["#00d2f3", "#1b2d59", "#0b90b7"]} className="absolute inset-0" />
+
+                  <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 p-6 rounded-2xl border border-blue-200 dark:border-blue-700 shadow-lg">
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Target className="h-8 w-8 text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-3">Our Mission</h3>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                        Emmanuel's Lanka is an industrial equipment design & development R&D firm established in 2009,
+                        delivering innovative IoT, Digitization and Industrial automation solutions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-3">Our Mission</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                Emmanuel's Lanka is an industrial equipment design & development R&D firm established in 2009, 
-                delivering innovative IoT, Digitization and Industrial automation solutions.
-              </p>
+
+
             </div>
           </div>
         </div>
-      </div>
-
-     
-    </div>
-  </div>
-</div>
 
         {/* Key Metrics */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -137,8 +144,10 @@ export default function AboutSection() {
               key={index}
               data-aos="fade-up"
               data-aos-delay={index * 100}
-              className="text-center p-6 rounded-xl bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm interactive-card border border-blue-200/50 dark:border-blue-700/50 hover:border-blue-300/70 dark:hover:border-blue-500/70 group relative overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
+              className="text-center relative p-6 rounded-xl bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm interactive-card border border-blue-200/50 dark:border-blue-700/50 hover:border-blue-300/70 dark:hover:border-blue-500/70 group relative overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
             >
+              <ShineBorder shineColor={["#00d2f3", "#1b2d59", "#0b90b7"]} className="absolute inset-0" />
+
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${metric.color} opacity-0 group-hover:opacity-10 dark:group-hover:opacity-15 transition-opacity duration-300`}
               />
@@ -161,57 +170,57 @@ export default function AboutSection() {
 
         {/* Established Section */}
         <div data-aos="fade-up" className="mt-16 text-center">
-  {/* Modern Established Badge */}
-  <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 dark:from-blue-500/20 dark:to-cyan-500/20 px-8 py-4 rounded-2xl border border-blue-200/60 dark:border-blue-700/60 hover:border-blue-300/80 dark:hover:border-blue-500/60 transition-all duration-300 hover:scale-105 group cursor-pointer backdrop-blur-sm">
-    {/* Animated Icon */}
-    <div className="relative">
-      <div className="absolute inset-0 bg-blue-500/20 rounded-full animate-ping group-hover:animate-none"></div>
-      <Calendar className="h-6 w-6 text-blue-600 dark:text-blue-400 relative z-10 group-hover:scale-110 transition-transform duration-300" />
-    </div>
-    <span className="text-lg text-foreground/90 whitespace-nowrap font-bold bg-gradient-to-r from-blue-600 to-cyan-
+          {/* Modern Established Badge */}
+          <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 dark:from-blue-500/20 dark:to-cyan-500/20 px-8 py-4 rounded-2xl border border-blue-200/60 dark:border-blue-700/60 hover:border-blue-300/80 dark:hover:border-blue-500/60 transition-all duration-300 hover:scale-105 group cursor-pointer backdrop-blur-sm">
+            {/* Animated Icon */}
+            <div className="relative">
+              <div className="absolute inset-0 bg-blue-500/20 rounded-full animate-ping group-hover:animate-none"></div>
+              <Calendar className="h-6 w-6 text-blue-600 dark:text-blue-400 relative z-10 group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <span className="text-lg text-foreground/90 whitespace-nowrap font-bold bg-gradient-to-r from-blue-600 to-cyan-
      dark:from-blue-400 dark:to-cyan-400 bg-clip-text ">
-      Established in 2009
-    </span>
-    {/* Subtle arrow on hover */}
-    <TrendingUp className="h-4 w-4 text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transform group-hover:translate-x-1 transition-all duration-300" />
-  </div>
+              Established in 2009
+            </span>
+            {/* Subtle arrow on hover */}
+            <TrendingUp className="h-4 w-4 text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transform group-hover:translate-x-1 transition-all duration-300" />
+          </div>
 
-  {/* Enhanced Description */}
-  <div className="mt-6 max-w-2xl mx-auto">
-    <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed text-pretty bg-white/50 dark:bg-gray-800/30 p-6 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-300">
-      With over <span className="font-semibold text-blue-600 dark:text-blue-400">15 years of excellence</span>, 
-      we have been at the forefront of innovation, providing cutting-edge R&D services to prestigious clients worldwide. 
-      Our journey since 2009 has been marked by continuous growth and technological advancement.
-    </p>
-    
-    {/* Additional Achievement Highlights */}
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-      <div className="flex items-center justify-center space-x-2 text-sm  font-semibold text-foreground/90 whitespace-nowrap">
-        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-        <span>15+ Years Experience</span>
-      </div>
-      <div className="flex items-center justify-center space-x-2 text-sm  font-semibold text-foreground/90 whitespace-nowrap">
-        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-        <span>Global Client Base</span>
-      </div>
-      <div className="flex items-center justify-center space-x-2 text-sm  font-semibold text-foreground/90 whitespace-nowrap">
-        <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-        <span>Continuous Innovation</span>
-      </div>
-    </div>
-  </div>
+          {/* Enhanced Description */}
+          <div className="mt-6 max-w-2xl mx-auto">
+            <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed text-pretty bg-white/50 dark:bg-gray-800/30 p-6 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-300">
+              With over <span className="font-semibold text-blue-600 dark:text-blue-400">15 years of excellence</span>,
+              we have been at the forefront of innovation, providing cutting-edge R&D services to prestigious clients worldwide.
+              Our journey since 2009 has been marked by continuous growth and technological advancement.
+            </p>
 
-  {/* Decorative Elements */}
-  <div className="flex justify-center space-x-2 mt-6">
-    {[1, 2, 3].map((item) => (
-      <div
-        key={item}
-        className="w-2 h-2 bg-blue-300 dark:bg-blue-600 rounded-full opacity-60 animate-bounce"
-        style={{ animationDelay: `${item * 0.2}s` }}
-      ></div>
-    ))}
-  </div>
-</div>
+            {/* Additional Achievement Highlights */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+              <div className="flex items-center justify-center space-x-2 text-sm  font-semibold text-foreground/90 whitespace-nowrap">
+                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                <span>15+ Years Experience</span>
+              </div>
+              <div className="flex items-center justify-center space-x-2 text-sm  font-semibold text-foreground/90 whitespace-nowrap">
+                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                <span>Global Client Base</span>
+              </div>
+              <div className="flex items-center justify-center space-x-2 text-sm  font-semibold text-foreground/90 whitespace-nowrap">
+                <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                <span>Continuous Innovation</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Decorative Elements */}
+          <div className="flex justify-center space-x-2 mt-6">
+            {[1, 2, 3].map((item) => (
+              <div
+                key={item}
+                className="w-2 h-2 bg-blue-300 dark:bg-blue-600 rounded-full opacity-60 animate-bounce"
+                style={{ animationDelay: `${item * 0.2}s` }}
+              ></div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   )

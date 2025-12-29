@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Factory, Cpu, Network, Shield, Activity, ChevronRight, Play } from "lucide-react"
 import { useEffect } from "react"
 import { DockDemo } from "./ui/UiSample"
+import { ShineBorder } from "./ui/shine-border"
 
 export default function HeroSection() {
 
@@ -144,8 +145,9 @@ export default function HeroSection() {
                   key={index}
                   data-aos="fade-left"
                   data-aos-delay={service.delay}
-                  className="group bg-slate-800/60 border border-slate-700/50 rounded-xl p-6 backdrop-blur-sm hover:bg-slate-800/80 hover:border-cyan-400/30 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-400/10"
+                  className="group relative bg-slate-800/60 rounded-xl p-6 backdrop-blur-sm hover:bg-slate-800/80 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-400/10"
                 >
+                  <ShineBorder shineColor={["#00d2f3", "#1b2d59", "#0b90b7"]} className="absolute inset-0" />
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-cyan-500/20 border border-cyan-400/30 rounded-lg flex items-center justify-center group-hover:bg-cyan-500/30 group-hover:border-cyan-400/50 transition-colors flex-shrink-0">
                       <service.icon className="h-6 w-6 text-cyan-400" />
