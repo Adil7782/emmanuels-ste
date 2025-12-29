@@ -12,6 +12,7 @@ import ProductsSection from "@/components/products-section"
 import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
 import { ScrollProgress } from "@/components/ui/scroll-progress"
+import EliotSite from "@/components/eliot"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true)
@@ -33,6 +34,7 @@ export default function Home() {
         <HeroSection />
         <ClientsSection />
         <AboutSection />
+        <EliotSite />
         <ServicesSection />
         <PortfolioSection />
         {/* <TeamSection /> */}

@@ -1,5 +1,6 @@
 import { Marquee } from "@/components/ui/marquee"
 import { scrollToContact } from "@/lib/linkTo"
+import { LightRays } from "./ui/light-rays"
 
 export default function ClientsSection() {
   const clients = [
@@ -22,8 +23,9 @@ export default function ClientsSection() {
   ]
 
   return (
-    <section className="py-24 bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-24 bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden">
+      <LightRays />
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div data-aos="fade-up" className="text-center mb-16">
           <span className="text-sm font-semibold text-primary tracking-wider uppercase mb-4 block">
@@ -42,7 +44,7 @@ export default function ClientsSection() {
           <div className="flex items-center justify-center mb-8">
             <div className="flex items-center">
               <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent w-20 mr-4" />
-              <h3 className="text-xl font-semibold text-foreground/90 whitespace-nowrap">
+              <h3 className="text-xl font-semibold text-primary whitespace-nowrap ">
                 Trusted Clients
               </h3>
               <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent w-20 ml-4" />
@@ -54,7 +56,7 @@ export default function ClientsSection() {
               {clients.map((client, index) => (
                 <div
                   key={index}
-                  className="group relative flex justify-center items-center w-64 h-32 p-4 bg-white/90 dark:bg-muted/80 rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg backdrop-blur-sm mx-4"
+                  className="group relative flex justify-center items-center w-64 h-32 p-4 bg-white/90  rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg backdrop-blur-sm mx-4"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <img
@@ -76,7 +78,7 @@ export default function ClientsSection() {
           <div className="flex items-center justify-center mb-8">
             <div className="flex items-center">
               <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent w-20 mr-4" />
-              <h3 className="text-xl font-semibold text-foreground/90 whitespace-nowrap">
+              <h3 className="text-xl font-semibold text-primary whitespace-nowrap">
                 Strategic Partners
               </h3>
               <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent w-20 ml-4" />
@@ -88,7 +90,7 @@ export default function ClientsSection() {
               {partners.map((partner, index) => (
                 <div
                   key={index}
-                  className="group relative flex justify-center items-center w-64 h-32 p-4 bg-white/90 dark:bg-muted/80 rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg backdrop-blur-sm mx-4"
+                  className="group relative flex justify-center items-center w-64 h-32 p-4 bg-white/90  rounded-2xl border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg backdrop-blur-sm mx-4"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <img
