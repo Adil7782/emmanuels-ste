@@ -1,6 +1,7 @@
 import { Marquee } from "@/components/ui/marquee"
 import { scrollToContact } from "@/lib/linkTo"
 import { LightRays } from "./ui/light-rays"
+import { GradientDivider, SectionDivider } from "./ui/section-divider"
 
 export default function ClientsSection() {
   const clients = [
@@ -28,6 +29,7 @@ export default function ClientsSection() {
 
   return (
     <section className="relative py-24 bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden">
+
       <LightRays />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -127,6 +129,10 @@ export default function ClientsSection() {
           </button>
         </div>
       </div>
+      {/* <GradientDivider position="top" />
+       */}
+
+      <GradientDivider position="top" />
     </section>
   )
 }

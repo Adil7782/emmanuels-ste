@@ -1,11 +1,14 @@
 "use client"
 
+import Image from "next/image"
+
 export default function Footer() {
   const footerLinks = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
-    { name: "Privacy Policy", href: "#" },
-    { name: "Terms of Use", href: "#" },
+    { name: "Services", href: "#services" },
+    { name: "Portfolio", href: "#portfolio" },
+    { name: "Contact", href: "#contact" },
   ]
 
   const scrollToSection = (href: string) => {
@@ -25,7 +28,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold text-primary mb-2">Emmanuel's Lanka</h3>
             <p className="text-muted-foreground text-sm">Smart Factory Solutions Since 2009</p>
           </div>
-
+          <Image onClick={() => scrollToSection("#home")} src={"/logo.png"} alt="Logo" width={100} height={100} />
           <div className="flex flex-wrap justify-center md:justify-end gap-6">
             {footerLinks.map((link) => (
               <button

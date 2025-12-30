@@ -1,5 +1,6 @@
 import { Cpu, Lightbulb, Cog, Zap, Bot, Sun, Database, Search } from "lucide-react"
 import { ParticlesBackground } from "./ui/meshBackground"
+import { GradientDivider } from "./ui/section-divider"
 
 export default function ServicesSection() {
   const services = [
@@ -136,6 +137,8 @@ export default function ServicesSection() {
           </div>
         </div>
       </div>
+      <GradientDivider position="top" />
+      <GradientDivider position="bottom" />
     </section>
   )
 }

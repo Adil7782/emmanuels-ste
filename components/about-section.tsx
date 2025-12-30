@@ -1,5 +1,6 @@
 import { Users, Award, Calendar, Target, TrendingUp } from "lucide-react"
 import { ShineBorder } from "./ui/shine-border"
+import { GradientDivider } from "./ui/section-divider"
 
 export default function AboutSection() {
   const metrics = [
@@ -41,6 +42,7 @@ export default function AboutSection() {
       id="about"
       className="py-20 bg-gradient-to-br from-slate-50 via-blue-50/30 to-cyan-50/50 dark:from-gray-900 dark:via-blue-950/30 dark:to-indigo-900/40 relative overflow-hidden"
     >
+      <GradientDivider position="top" />
       {/* Light theme background elements */}
       <div className="absolute inset-0 opacity-40 dark:opacity-30">
         <div className="absolute top-20 left-10 w-32 h-32 bg-blue-400/20 rounded-full blur-xl animate-pulse dark:bg-blue-500/20" />
@@ -222,6 +224,7 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
+      <GradientDivider position="bottom" />
     </section>
   )
 }

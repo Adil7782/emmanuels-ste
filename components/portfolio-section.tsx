@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Zap, ArrowUpRight, Sparkles } from "lucide-react"
 import { Particles } from "./ui/particles"
+import { GradientDivider } from "./ui/section-divider"
 
 export default function PortfolioSection() {
   const [activeFilter, setActiveFilter] = useState("All")
@@ -284,6 +285,8 @@ export default function PortfolioSection() {
           </div>
         </div>
       </div>
+      <GradientDivider position="top" />
+      {/* <GradientDivider position="bottom" /> */}
     </section>
   )
 }

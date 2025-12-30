@@ -5,6 +5,7 @@ import { ArrowRight, Factory, Cpu, Network, Shield, Activity, ChevronRight, Play
 import { useEffect } from "react"
 import { DockDemo } from "./ui/UiSample"
 import { ShineBorder } from "./ui/shine-border"
+import { GradientDivider, SectionDivider } from "./ui/section-divider"
 
 export default function HeroSection() {
 
@@ -104,12 +105,12 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-1 border-slate-600 text-slate-200 hover:bg-slate-800/50 hover:border-slate-500 px-8 py-7 text-lg rounded-lg font-semibold transition-all duration-200 hover:scale-105 group bg-transparent"
+                className="border-1 border-slate-600 hover:text-cyan-400 text-slate-200 hover:cursor-pointer hover:border-slate-500 px-8 py-7 text-lg rounded-lg font-semibold transition-all duration-200 hover:scale-105 group bg-transparent"
                 onClick={() => scrollToContact("portfolio")}
 
               >
                 View Our Projects
-                <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 hover:text-cyan-400 transition-transform" />
               </Button>
 
             </div>
@@ -171,9 +172,10 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-800 to-transparent" />
 
+
+      {/* Bottom fade */}
+      {/* <GradientDivider position="bottom" /> */}
     </section>
   )
 }

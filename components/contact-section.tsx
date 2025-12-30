@@ -18,6 +18,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/components/ui/use-toast"
 import { MapPin, Mail, Phone, Send, MessageSquare, Clock, Globe, CheckCircle2, MessageCircle } from "lucide-react"
 import axios from 'axios';
+import { GradientDivider } from "./ui/section-divider"
 
 // Zod validation schema
 const formSchema = z.object({
@@ -100,6 +101,7 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 relative overflow-hidden">
+      {/* <GradientDivider position="top" /> */}
       {/* Dark Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-1/4 w-96 h-96 bg-gradient-to-r from-cyan-400/10 to-blue-500/10 rounded-full blur-3xl" />

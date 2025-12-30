@@ -4,6 +4,7 @@ import { ArrowRight, ExternalLink, Zap, Activity, Shield, Smartphone } from 'luc
 import { Button } from './ui/button'
 import { NeonGradientCard } from './ui/neon-gradient-card'
 import Image from 'next/image'
+import { GradientDivider } from './ui/section-divider'
 
 const EliotSite = () => {
     return (
@@ -96,6 +97,8 @@ const EliotSite = () => {
 
                 </div>
             </div>
+            <GradientDivider position="top" />
+            <GradientDivider position="bottom" />
         </section>
     )
 }
