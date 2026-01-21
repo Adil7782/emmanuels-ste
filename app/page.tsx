@@ -37,7 +37,7 @@ export default function Home() {
         <EliotSite />
         <ServicesSection />
         <PortfolioSection />
-        {/* <TeamSection /> */}
+        <TeamSection />
         {/* <ProductsSection /> */}
         <ContactSection />
       </main>
