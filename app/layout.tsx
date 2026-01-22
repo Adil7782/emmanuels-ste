@@ -1,5 +1,6 @@
 import { Outfit } from "next/font/google"
 import "./globals.css"
+import { WhatsAppButton } from "@/components/whatsapp-button";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -60,6 +61,7 @@ export default function RootLayout({
       </head>
       <body className={`${outfit.variable} font-sans antialiased`}>
         {children}
+        <WhatsAppButton />
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script
           dangerouslySetInnerHTML={{

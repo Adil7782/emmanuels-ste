@@ -21,7 +21,7 @@ export const ParallaxScroll = ({
     const translateSecond = useTransform(scrollYProgress, [0, 1], [0, 200]);
     const translateThird = useTransform(scrollYProgress, [0, 1], [0, -200]);
 
-    const third = Math.ceil(images.length / 3);
+    const third = Math.ceil(images.length / 4);
 
     const firstPart = images.slice(0, third);
     const secondPart = images.slice(third, 2 * third);

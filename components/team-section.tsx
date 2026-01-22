@@ -8,12 +8,21 @@ const images = [
   { src: "/team/1.jpeg", isPortrait: false },
   { src: "/team/2.jpeg", isPortrait: false },
   { src: "/team/3.jpeg", isPortrait: true }, // Varied for visual interest, change as needed
-  { src: "/team/6.jpeg", isPortrait: false },
-  { src: "/team/5.jpeg", isPortrait: false },
-  { src: "/team/4.jpeg", isPortrait: false },
+  // { src: "/team/5.jpeg", isPortrait: false },
+  // { src: "/team/4.jpeg", isPortrait: false },
   { src: "/team/7.jpeg", isPortrait: false },
+  { src: "/team/12.jpeg", isPortrait: true },
   { src: "/team/8.jpeg", isPortrait: false },
-  { src: "/team/9.jpeg", isPortrait: false },
+  { src: "/team/10.jpeg", isPortrait: false },
+  { src: "/team/11.jpeg", isPortrait: false },
+  { src: "/team/6.jpeg", isPortrait: false },
+  { src: "/team/13.jpeg", isPortrait: false },
+  { src: "/team/14.jpeg", isPortrait: false },
+  { src: "/team/15.jpeg", isPortrait: false },
+  { src: "/team/16.jpeg", isPortrait: false },
+
+
+  // { src: "/team/9.jpeg", isPortrait: false },
 ];
 
 export default function TeamSection() {
@@ -42,14 +51,14 @@ export default function TeamSection() {
 
       <div className="w-full relative z-10">
         <div className="text-center mb-10 px-4">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 dark:bg-primary/20 border border-primary/20 rounded-full mb-6">
+          {/* <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 dark:bg-primary/20 border border-primary/20 rounded-full mb-6">
             <Users className="h-4 w-4 text-primary" />
             <span className="text-sm font-medium text-primary">Our Team</span>
-          </div>
+          </div> */}
 
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-slate-900 via-primary to-blue-600 dark:from-white dark:via-cyan-400 dark:to-blue-400 bg-clip-text text-transparent">
-              Meet The Experts
+              Meet Our Team
             </span>
           </h2>
 
