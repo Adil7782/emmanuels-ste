@@ -25,7 +25,7 @@ export default function PortfolioSection() {
       title: "Jetson AI System",
       category: "Jetson AI",
       image: "/ai-computer-vision-system-industrial.jpg",
-      description: "AI-powered computer vision system for quality control",
+      description: "AI-powered computer vision system",
       tech: ["AI", "Computer Vision", "Jetson"],
     },
     {
@@ -54,10 +54,10 @@ export default function PortfolioSection() {
     },
     {
       id: 6,
-      title: "AI Vision System",
+      title: "Jetson AI System",
       category: "Jetson AI",
       image: "/machine-vision-ai-system.jpg",
-      description: "Machine vision system for automated quality inspection",
+      description: "AI-powered computer vision system",
       tech: ["Machine Vision", "AI", "Quality Control"],
     },
     {
