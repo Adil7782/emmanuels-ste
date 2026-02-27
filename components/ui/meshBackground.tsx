@@ -81,26 +81,27 @@ export const ParticlesBackground = ({ id = "tsparticles" }: { id?: string }) => 
           },
           links: {
             color: particleColor,
-            distance: 150,
+            distance: 140,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.25,   // softer
             width: 1,
           },
           move: {
             direction: MoveDirection.none,
             enable: true,
             outModes: { default: OutMode.out },
-            random: false,
-            speed: 6,
-            straight: false,
+            speed: 1.5,      // slower, more elegant
           },
           number: {
-            density: { enable: true },
-            value: 80,
+            density: {
+              enable: true,
+              area: 1000,    // spread them out more
+            },
+            value: 35,       // reduced from 80 → 35
           },
-          opacity: { value: 0.5 },
+          opacity: { value: 0.4 },
           shape: { type: "circle" },
-          size: { value: { min: 1, max: 5 } },
+          size: { value: { min: 1, max: 3 } }, // smaller particles
         },
         detectRetina: true,
       };
