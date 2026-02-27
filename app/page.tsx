@@ -1,6 +1,5 @@
 "use client"
 
-import { useState, useEffect } from "react"
 import Navigation from "@/components/navigation"
 import HeroSection from "@/components/hero-section"
 import ClientsSection from "@/components/clients-section"
@@ -15,19 +14,9 @@ import { ScrollProgress } from "@/components/ui/scroll-progress"
 import EliotSite from "@/components/eliot"
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(true)
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark")
-    } else {
-      document.documentElement.classList.remove("dark")
-    }
-  }, [darkMode])
-
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navigation darkMode={darkMode} setDarkMode={setDarkMode} />
+    <div className="min-h-screen bg-background text-foreground transition-colors duration-500">
+      <Navigation />
       <main>
         <ScrollProgress />
 

@@ -8,6 +8,7 @@ const outfit = Outfit({
 });
 
 import { Metadata } from "next"
+import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://emmanuelslanka.eliot.global'),
@@ -55,13 +56,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
       </head>
       <body className={`${outfit.variable} font-sans antialiased`}>
-        {children}
-        <WhatsAppButton />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+          <WhatsAppButton />
+        </ThemeProvider>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -69,7 +72,7 @@ export default function RootLayout({
             AOS.init({
               duration: 800,
               easing: 'ease-in-out',
-              once: true,
+              once: false,
               offset: 100
             });
           `,
