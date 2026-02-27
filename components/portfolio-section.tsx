@@ -165,8 +165,8 @@ export default function PortfolioSection() {
               key={filter}
               onClick={() => setActiveFilter(filter)}
               className={`px-6 py-2.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 border ${activeFilter === filter
-                  ? "bg-primary text-primary-foreground shadow-[0_4px_15px_rgba(var(--primary),0.3)] border-transparent"
-                  : "bg-background/50 backdrop-blur-md text-foreground/80 border-border hover:bg-foreground/5 hover:text-foreground"
+                ? "bg-primary text-primary-foreground shadow-[0_4px_15px_rgba(var(--primary),0.3)] border-transparent"
+                : "bg-background/50 backdrop-blur-md text-foreground/80 border-border hover:bg-foreground/5 hover:text-foreground"
                 }`}
             >
               {filter}
@@ -193,6 +193,7 @@ export default function PortfolioSection() {
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     loading="lazy"
+                    decoding="async"
                   />
 
                   {/* Modern Overlay CTA */}

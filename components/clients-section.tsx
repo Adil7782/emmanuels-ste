@@ -77,6 +77,8 @@ export default function ClientsSection() {
                     src={client.logo || "/placeholder.svg"}
                     alt={client.name}
                     className="h-full w-full object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 relative z-10"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               ))}
@@ -107,6 +109,8 @@ export default function ClientsSection() {
                     src={partner.logo || "/placeholder.svg"}
                     alt={partner.name}
                     className="h-full w-full object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 relative z-10"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none group-hover:-translate-y-2">
                     <span className="text-xs font-bold text-primary-foreground bg-primary px-3 py-1.5 rounded-full shadow-lg whitespace-nowrap tracking-wide">

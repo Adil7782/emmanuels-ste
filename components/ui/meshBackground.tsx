@@ -64,7 +64,7 @@ export const ParticlesBackground = ({ id = "tsparticles" }: { id?: string }) => 
 
       return {
         fullScreen: { enable: false },
-        fpsLimit: 120,
+        fpsLimit: 60,
         interactivity: {
           events: {
             onClick: { enable: true, mode: "push" },
@@ -97,7 +97,7 @@ export const ParticlesBackground = ({ id = "tsparticles" }: { id?: string }) => 
               enable: true,
               area: 1000,    // spread them out more
             },
-            value: 35,       // reduced from 80 → 35
+            value: 20,       // reduced from 80 → 35 → 20 for mobile performance
           },
           opacity: { value: 0.4 },
           shape: { type: "circle" },
