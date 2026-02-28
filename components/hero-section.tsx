@@ -35,9 +35,12 @@ export default function HeroSection() {
           </svg>
         </div>
 
-        {/* Dynamic Gradient overlays */}
-        <div className="absolute top-[0%] right-[0%] w-[500px] h-[500px] bg-primary/20 dark:bg-primary/15 rounded-full blur-[100px] animate-background-position-spin" />
-        <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-accent/20 dark:bg-accent/15 rounded-full blur-[120px] animate-background-position-spin" style={{ animationDelay: '2s' }} />
+        {/* Dynamic Gradient overlays - hidden on mobile for performance */}
+        <div className="hidden md:block absolute top-[0%] right-[0%] w-[500px] h-[500px] bg-primary/20 dark:bg-primary/15 rounded-full blur-[100px] animate-background-position-spin" />
+        <div className="block md:hidden absolute top-[0%] right-[0%] w-[300px] h-[300px] bg-primary/10 dark:bg-primary/5 rounded-full blur-[60px]" />
+
+        <div className="hidden md:block absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-accent/20 dark:bg-accent/15 rounded-full blur-[120px] animate-background-position-spin" style={{ animationDelay: '2s' }} />
+        <div className="block md:hidden absolute bottom-[-5%] left-[-5%] w-[300px] h-[300px] bg-accent/10 dark:bg-accent/5 rounded-full blur-[60px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full mt-10 md:mt-0">

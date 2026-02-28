@@ -3,6 +3,7 @@ import { scrollToContact } from "@/lib/linkTo"
 import { LightRays } from "./ui/light-rays"
 import { GradientDivider } from "./ui/section-divider"
 import { ArrowUpRight } from "lucide-react"
+import Image from "next/image"
 
 export default function ClientsSection() {
   const clients = [
@@ -33,7 +34,7 @@ export default function ClientsSection() {
       <LightRays />
 
       <div className="absolute inset-0 pointer-events-none z-0">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/5 rounded-[100%] blur-[120px]" />
+        <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/5 rounded-[100%] blur-[120px]" />
       </div>
 
       <div className="relative z-10 max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,15 +72,16 @@ export default function ClientsSection() {
                   key={index}
                   className="group relative flex justify-center items-center w-64 h-32 p-6 glass-card rounded-2xl mx-4 transition-all duration-300 hover:-translate-y-1"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={client.logo || "/placeholder.svg"}
-                    alt={client.name}
-                    className="h-full w-full object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 relative z-10"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0" />
+                  <div className="relative w-full h-full p-4 z-10 flex items-center justify-center">
+                    <Image
+                      src={client.logo || "/placeholder.svg"}
+                      alt={client.name}
+                      fill
+                      sizes="(max-width: 768px) 150px, 200px"
+                      className="object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 p-4"
+                    />
+                  </div>
                 </div>
               ))}
             </Marquee>
@@ -103,15 +105,16 @@ export default function ClientsSection() {
                   key={index}
                   className="group relative flex justify-center items-center w-64 h-32 p-6 glass-card rounded-2xl mx-4 transition-all duration-300 hover:-translate-y-1"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={partner.logo || "/placeholder.svg"}
-                    alt={partner.name}
-                    className="h-full w-full object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 relative z-10"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0" />
+                  <div className="relative w-full h-full p-4 z-10 flex items-center justify-center">
+                    <Image
+                      src={partner.logo || "/placeholder.svg"}
+                      alt={partner.name}
+                      fill
+                      sizes="(max-width: 768px) 150px, 200px"
+                      className="object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 p-4"
+                    />
+                  </div>
                   <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 z-20 pointer-events-none group-hover:-translate-y-2">
                     <span className="text-xs font-bold text-primary-foreground bg-primary px-3 py-1.5 rounded-full shadow-lg whitespace-nowrap tracking-wide">
                       {partner.name}

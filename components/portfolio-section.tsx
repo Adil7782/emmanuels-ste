@@ -187,13 +187,12 @@ export default function PortfolioSection() {
                 {/* Image Container */}
                 <div className="relative overflow-hidden aspect-[4/3] w-full bg-muted">
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent z-10" />
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    loading="lazy"
-                    decoding="async"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
 
                   {/* Modern Overlay CTA */}
@@ -241,7 +240,7 @@ export default function PortfolioSection() {
         {/* Modern CTA Section */}
         <div data-aos="fade-up" className="relative mt-8">
           <div className="relative overflow-hidden rounded-[3rem] bg-gradient-to-r from-primary to-accent p-12 lg:p-16 text-center border border-white/10 shadow-[0_20px_50px_rgba(var(--primary),0.3)] group hover:shadow-[0_20px_60px_rgba(var(--primary),0.4)] transition-all duration-700">
-            <div className="absolute inset-0">
+            <div className="absolute inset-0 hidden md:block">
               <Particles />
             </div>
             {/* Background Pattern */}

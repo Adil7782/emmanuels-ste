@@ -75,12 +75,12 @@ export default function ServicesSection() {
       id="services"
       className="py-24 bg-background relative overflow-hidden"
     >
-      <div className="absolute inset-0 z-0 opacity-50 dark:opacity-30"><ParticlesBackground id="services-particles" /></div>
+      <div className="absolute inset-0 z-0 opacity-50 dark:opacity-30 hidden md:block"><ParticlesBackground id="services-particles" /></div>
 
       {/* Soft gradient backgrounds */}
       <div className="absolute inset-0 pointer-events-none z-0">
-        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-accent/5 rounded-full blur-[100px]" />
+        <div className="hidden md:block absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]" />
+        <div className="hidden md:block absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-accent/5 rounded-full blur-[100px]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

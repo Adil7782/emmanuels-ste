@@ -71,9 +71,10 @@ export default function RootLayout({
             __html: `
             AOS.init({
               duration: 800,
-              easing: 'ease-in-out',
+              easing: 'ease-out-cubic',
               once: true,
-              offset: 100
+              offset: 50,
+              disable: window.innerWidth < 768 ? 'mobile' : false
             });
           `,
           }}
