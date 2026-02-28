@@ -78,6 +78,7 @@ export default function ClientsSection() {
                       src={client.logo || "/placeholder.svg"}
                       alt={client.name}
                       fill
+                      priority
                       sizes="(max-width: 768px) 150px, 200px"
                       className="object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 p-4"
                     />
@@ -111,6 +112,7 @@ export default function ClientsSection() {
                       src={partner.logo || "/placeholder.svg"}
                       alt={partner.name}
                       fill
+                      priority
                       sizes="(max-width: 768px) 150px, 200px"
                       className="object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 p-4"
                     />

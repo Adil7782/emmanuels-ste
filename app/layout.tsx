@@ -73,8 +73,7 @@ export default function RootLayout({
               duration: 800,
               easing: 'ease-out-cubic',
               once: true,
-              offset: 50,
-              disable: window.innerWidth < 768 ? 'mobile' : false
+              offset: 50
             });
           `,
           }}
